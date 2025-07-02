@@ -11,11 +11,12 @@ import json # class_names.json の保存に必要
 # 1. データセットのパスを設定
 # あなたのローカルPC上のデータセットのルートパスを設定してください。
 # C:/Users/student/flu/Fruit-Images-Dataset とのことですので、このパスに設定します。
-DATA_DIR = 'C:/Users\/student/flu/Fruit-Images-Dataset'
+DATA_DIR = "C:/Users/cyber/Downloads/Fruit-Images-Dataset-master/Fruit-Images-Dataset-master"
 MODEL_SAVE_PATH = 'models/grape_classifier.pt' # 学習済みモデルの保存パス
 
+
 # GPUが利用可能か確認 (ローカルPCにGPUがない場合は自動的にCPUが選択されます)
-device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda:0")
 print(f"INFO: Using device: {device}")
 
 # 2. データの前処理とデータ拡張を定義
